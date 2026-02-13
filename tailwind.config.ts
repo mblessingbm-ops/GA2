@@ -11,23 +11,12 @@ const config: Config = {
             colors: {
                 background: "var(--background)",
                 foreground: "var(--foreground)",
-                primary: {
-                    DEFAULT: "#B76E79",
-                    foreground: "#ffffff",
-                },
-                secondary: {
-                    DEFAULT: "#36454F",
-                    foreground: "#ffffff",
-                },
-                accent: {
-                    DEFAULT: "#D4AF37",
-                    foreground: "#ffffff",
-                },
             },
             fontFamily: {
-                sans: ["var(--font-sans)"],
-                serif: ["var(--font-serif)"],
-            }
+                heading: ['var(--font-heading)', 'serif'],
+                body: ['var(--font-body)', 'sans-serif'],
+                editorial: ['var(--font-editorial)', 'sans-serif'], // Added editorial font
+            },
         },
     },
     plugins: [],
